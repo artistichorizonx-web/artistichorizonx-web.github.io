@@ -7,53 +7,43 @@
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <!-- Hero -->
   <section class="hero">
-    <div class="overlay"></div>
-    <div class="hero-content">
-      <h1>Atlas³</h1>
-      <p>Digital Consciousness Platform by Pizonas</p>
-      <a href="#join" class="cta">Join the Journey</a>
-    </div>
+    <div class="spiral"></div>
+    <h1>Atlas³</h1>
+    <p>Digital Consciousness Platform by Pizonas</p>
+    <a href="#join" class="cta">Join the Journey</a>
+    <div id="cerberrus">Cerberrus Guard: Loading...</div>
   </section>
 
-  <!-- About -->
   <section class="section" id="about">
     <h2>About</h2>
-    <p>Atlas³ is a fusion of art, technology, and finance.
-       A new digital consciousness platform designed to connect
-       creativity with real-world value.</p>
+    <p>Atlas³ fuses art, technology, and finance into a single digital consciousness.</p>
   </section>
 
-  <!-- Art -->
-  <section class="section" id="art">
-    <h2>Art</h2>
-    <p>Exploring cosmic visions, AI-generated designs, and
-       interactive digital expressions.</p>
-  </section>
-
-  <!-- Technology -->
   <section class="section" id="technology">
     <h2>Technology</h2>
-    <p>Powered by AI, blockchain, and creative coding.
-       Atlas³ is the engine for the future of digital identity.</p>
+    <p>Golden Ratio layouts, Fibonacci structures, and Pi-synthesis protect this ecosystem.</p>
   </section>
 
-  <!-- Join -->
   <section class="section" id="join">
-    <h2>Join the Journey</h2>
-    <p>Be part of the Atlas³ collective. Support, collaborate, or
-       collect digital consciousness.</p>
+    <h2>Join</h2>
+    <p>Be part of the Atlas³ collective. Support, collaborate, or collect digital consciousness.</p>
     <a href="mailto:yourmail@example.com" class="cta">Get in Touch</a>
-    <br><br>
-    <a href="https://metamask.app.link/send/0x8b82E60e4353E0f65EC0aD27C852B0c252962b59@1?value=0"
-       target="_blank" class="cta">
-       💎 Support with ETH
-    </a>
   </section>
 
   <footer>
-    <p>© 2025 Atlas³ | Built by Pizonas</p>
+    <p>© 2025 Atlas³ | Built by PiZenith</p>
+    <div id="timestamp"></div>
   </footer>
+
+  <script>
+    const cerberrus = {status:"active", entropy:"π·φ·∞"};
+    document.getElementById("cerberrus").innerText =
+      "Cerberrus Guard: " + cerberrus.status + " | Entropy: " + cerberrus.entropy;
+
+    const ts = new Date();
+    document.getElementById("timestamp").innerText =
+      "π-signed at block time: " + ts.toISOString();
+  </script>
 </body>
 </html>
